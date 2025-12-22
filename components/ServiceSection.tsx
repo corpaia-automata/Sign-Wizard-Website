@@ -19,27 +19,25 @@ interface ServiceSectionProps {
 
 export default function ServiceSection({ services, onQuoteClick, title, description }: ServiceSectionProps) {
   return (
-    <section className="relative bg-background">
+    <section className="relative bg-background max-w-[90rem] mx-auto">
       {/* Heading Section */}
       {(title || description) && (
         <div className="container mx-auto px-4 py-8">
-          <div className="max-w-7xl">
-            {title && (
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-3">
-                {title}
-              </h2>
-            )}
-            {description && (
-              <div className="text-lg text-muted-foreground leading-relaxed">
-                {description}
-              </div>
-            )}
-          </div>
+          {title && (
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-3">
+              {title}
+            </h2>
+          )}
+          {description && (
+            <div className="text-lg text-muted-foreground leading-relaxed">
+              {description}
+            </div>
+          )}
         </div>
       )}
 
       {/* Mobile: Normal Scroll Layout */}
-      <div className="lg:hidden space-y-12 py-8">
+      <div className="lg:hidden space-y-12 mx-auto py-8">
         {services.map((service, index) => (
           <div key={service.title} className="container mx-auto px-4">
             <div className="space-y-6">
