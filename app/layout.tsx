@@ -13,7 +13,12 @@ export const metadata: Metadata = {
   description:
     "Leading signage company offering LED 3D letters, indoor & outdoor advertising, printing, laser cutting, and complete branding solutions for businesses.",
   keywords: "signage, LED signage, 3D letters, printing, branding, laser cutting, outdoor advertising, indoor signage",
-    generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
