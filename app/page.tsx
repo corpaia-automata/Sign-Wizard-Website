@@ -251,7 +251,7 @@ export default function HomePage() {
               Comprehensive signage and branding solutions tailored to your business needs
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <Link key={service.href} href={service.href} className="block">
                 <Card className="group hover:shadow-lg transition-shadow overflow-hidden cursor-pointer h-full">
