@@ -9,39 +9,75 @@ interface HeroProps {
 
 export function Hero({ onQuoteClick }: HeroProps) {
   return (
-    <section className="relative h-[700px] flex items-center justify-start text-left text-white">
-      <div className="absolute inset-0" />
-      <img
-        src="/street-hero.png"
-        alt="Hero"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10" />
-      <div className="relative z-20 container mx-auto px-4 leading-tight">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance text-left leading-tight">
-          Transform Your Brand Visibility with Professional Signage
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl text-left">
-          End-to-end signage solutions from design to installation. Making businesses stand out since 2010.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-start">
-          <Button
-            onClick={onQuoteClick}
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8"
-          >
-            Get a Quote
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button
-            onClick={onQuoteClick}
-            size="lg"
-            variant="outline"
-            className="bg-white/10 hover:bg-white/20 text-white border-white text-lg px-8"
-          >
-            Talk to Our Expert
-          </Button>
+    <section className="relative">
+      {/* Top Section with Image Background */}
+      <div className="relative min-h-[600px] lg:min-h-[550px] flex items-center ">
+        <img
+          src="/home.jpg"
+          alt="Sign Wizard"
+          className="absolute inset-0 w-full"
+        />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 z-10" />
+        <div className="container mx-auto px-4 relative z-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Side - Text */}
+            <div className="text-white">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                
+                <span className="inline-block bg-accent text-white px-4 py-2 rounded-lg">
+                Over 20 Years
+                </span>{" "}
+                of Precision Signage Quality & Consistency
+              </h1>
+              <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+                Sign Wizard is a trusted signage partner across Kerala and India, delivering clear and durable signage since 2005.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom White Section - Statistics */}
+      <div className="bg-white py-7">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 max-w-6xl mx-auto">
+            {/* Project Completed */}
+            <div className="flex rounded-xl overflow-hidden shadow-lg">
+              <div className="bg-accent flex items-center justify-center px-6 py-6 min-w-[100px]">
+                <span className="text-3xl lg:text-4xl font-bold text-white">2 Lakh+</span>
+              </div>
+              <div className="bg-[#06177f] flex items-center justify-center px-6 py-4 flex-1">
+                <span className="text-lg lg:text-xl font-semibold text-white text-center">
+                  Project Completed
+                </span>
+              </div>
+            </div>
+
+            {/* Happy Clients */}
+            <div className="flex rounded-xl overflow-hidden shadow-lg">
+              <div className="bg-accent flex items-center justify-center px-6 py-6 min-w-[100px]">
+                <span className="text-3xl lg:text-4xl font-bold text-white">2 Lakh+</span>
+              </div>
+              <div className="bg-[#06177f] flex items-center justify-center px-6 py-6 flex-1">
+                <span className="text-lg lg:text-xl font-semibold text-white text-center">
+                  Happy Clients
+                </span>
+              </div>
+            </div>
+
+            {/* Years of Experience */}
+            <div className="flex rounded-xl overflow-hidden shadow-lg">
+              <div className="bg-accent flex items-center justify-center px-6 py-8 min-w-[140px]">
+                <span className="text-3xl lg:text-4xl font-bold text-white">20+</span>
+              </div>
+              <div className="bg-[#06177f] flex items-center justify-center px-6 py-8 flex-1">
+                <span className="text-lg lg:text-xl font-semibold text-white text-center">
+                  Years of Experience
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

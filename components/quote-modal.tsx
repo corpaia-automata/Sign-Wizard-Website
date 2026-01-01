@@ -51,35 +51,40 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[500px]">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-primary">Get a Free Quote</DialogTitle>
+      <DialogContent className="sm:max-w-2xl">
+        <DialogHeader className="text-left">
+          <DialogTitle className="text-2xl text-[#06177f] md:text-4xl text-left font-bold text-primary">Get a Free Quote</DialogTitle>
           <DialogDescription>
             Fill in your details and we'll get back to you with a customized quote within 24 hours.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-          <div className="space-y-2">
-            <Label htmlFor="name">Name *</Label>
-            <Input
-              id="name"
-              required
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="Your full name"
-            />
+          {/* First Row: Name and Phone Number */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="name">Name *</Label>
+              <Input
+                id="name"
+                required
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                placeholder="Your full name"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="phone">Phone Number *</Label>
+              <Input
+                id="phone"
+                type="tel"
+                required
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                placeholder="+91 98765 43210"
+              />
+            </div>
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number *</Label>
-            <Input
-              id="phone"
-              type="tel"
-              required
-              value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="+91 98765 43210"
-            />
-          </div>
+
+          {/* Second Row: Email */}
           <div className="space-y-2">
             <Label htmlFor="email">Email *</Label>
             <Input
@@ -88,13 +93,15 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="your.email@example.com"
+              placeholder="Email Address"
             />
           </div>
+
+          {/* Third Row: Service Interested In */}
           <div className="space-y-2">
             <Label htmlFor="service">Service Interested In *</Label>
             <Select value={formData.service} onValueChange={(value) => setFormData({ ...formData, service: value })}>
-              <SelectTrigger>
+              <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select a service" />
               </SelectTrigger>
               <SelectContent>
@@ -109,6 +116,8 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               </SelectContent>
             </Select>
           </div>
+
+          {/* Fourth Row: Message */}
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
             <Textarea
@@ -119,6 +128,8 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               rows={4}
             />
           </div>
+
+          {/* Fifth Row: Submit Button */}
           <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
             Submit Request
           </Button>

@@ -20,16 +20,18 @@ import { Industries } from "@/components/industries"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { SisterConcerns } from "@/components/sister-concerns"
 import { AboutUsSection } from "@/components/AboutUsSection"
+import { OurStory } from "@/components/our-story"
 import { FAQ } from "@/components/faq"
 import ServiceSection from "@/components/ServiceSection"
+import { Services } from "@/components/services"
 
 const services = [
   {
     title: "LED 3D Letter Signage",
-    description: "Illuminated channel letters that make your brand shine day and night",
+    description: "LED 3D letter signage delivers illuminated depth and standout brand presence.",
     icon: Lightbulb,
-    href: "/services/led-3d-letters",
-    image: "/led-3d-signage-letters-illuminated.jpg",
+    href: "/easy.jpg",
+    image: "/easy.jpg",
   },
   {
     title: "Indoor Advertising",
@@ -158,10 +160,9 @@ export default function HomePage() {
 
       <Hero onQuoteClick={() => setQuoteModalOpen(true)} />
 
-      <AboutUsSection />
 
       {/* Our Signage Services */}
-      <ServiceSection
+      {/* <ServiceSection
         services={stackedServices}
         onQuoteClick={() => setQuoteModalOpen(true)}
         title="Our Premium Signage Solutions"
@@ -170,44 +171,20 @@ export default function HomePage() {
             Elevate your brand with our <strong>premium signage solutions</strong> crafted from the finest materials. From elegant acrylic to durable steel, we create signage that perfectly reflects your brand identity and values. <strong>Our signage</strong> doesn't just display information, it makes a lasting impression, enhances your brand presence, and communicates quality to your customers. Whether it's for indoor elegance or outdoor durability, we craft every signage piece with precision and attention to detail.
           </>
         }
-      />
+      /> */}
 
 
+      <Clients />
       {/* Services Overview */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 text-start">
-          <div className="text-start mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-balance">Our <span className="text-accent">Services</span></h2>
-            <p className="text-xl text-muted-foreground max-w-2xl text-start">
-              Comprehensive signage and branding solutions tailored to your business needs
-            </p>
-          </div>
-          <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <Link key={service.href} href={service.href} className="block">
-                <Card className="group hover:shadow-lg transition-shadow overflow-hidden cursor-pointer h-full">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <service.icon className="h-10 w-10 text-accent mb-4" />
-                    <h3 className="text-xl font-semibold mb-2 text-primary">{service.title}</h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">{service.description}</p>
-                    <div className="text-accent hover:text-accent/80 font-semibold inline-flex items-center">
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Services
+        services={services.map((service) => ({
+          title: service.title,
+          description: service.description,
+          href: service.href,
+          image: service.image,
+        }))}
+      />
+      <OurStory />
 
       <WhyChooseUs />
 
@@ -248,8 +225,7 @@ export default function HomePage() {
       </section> */}
 
 
-      <Industries />
-      <Clients />
+      {/* <Industries /> */}
       <SisterConcerns />
 
       {/* Testimonials */}
@@ -291,7 +267,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Get In <br /> <span className="text-accent">Touch With Us</span> </h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#06177f] mb-6">Get In <br /> <span className="text-accent ">Touch With Us</span> </h2>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                 We would love to hear from you. Whether you have queries, need assistance, or want to explore our products, we are here to help you.
               </p>
@@ -299,7 +275,7 @@ export default function HomePage() {
 
             {/* Enquire Now Form - Right Side */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Enquire Now</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#06177f] mb-6">Enquire Now</h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-primary font-semibold">Full Name *</Label>
@@ -377,28 +353,34 @@ export default function HomePage() {
         </div>
       </section>
       {/* Final CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Ready to Transform Your Brand?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-balance">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-accent">Ready to Transform Your Brand?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-balance text-[#06177f]">
             Get a free consultation and quote for your signage project today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={() => setQuoteModalOpen(true)}
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8"
+              variant="outline"
+              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-lg px-8 py-6 rounded-xl"
             >
               Get Free Quote
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <div className="ml-2 w-8 h-8 bg-[#06177f] rounded-full flex items-center justify-center">
+                <ArrowRight className="h-4 w-4 text-white" />
+              </div>
             </Button>
             <Button
               onClick={() => setQuoteModalOpen(true)}
               size="lg"
               variant="outline"
-              className="bg-white/10 hover:bg-white/20 text-white border-white text-lg px-8"
+              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-lg px-8 py-6 rounded-xl"
             >
-              Talk to our expert
+              Talk to Our Expert
+              <div className="ml-2 w-8 h-8 bg-[#06177f] rounded-full flex items-center justify-center">
+                <ArrowRight className="h-4 w-4 text-white" />
+              </div>
             </Button>
           </div>
         </div>

@@ -1,50 +1,53 @@
 export function SisterConcerns() {
   const sisterConcerns = [
     {
-      name: "NILE",
-      subtitle: "",
+      name: "Wizard Pro",
+      logo: "/wizard pro.png",
+    },
+    {
+      name: "Nile Technology & Solutions",
       logo: "/nile.png",
     },
     {
-      name: "signet",
-      subtitle: "PRINT & PROMO LTD",
+      name: "Signet Print & Sign Co.",
       logo: "/signet05.png",
     },
     {
-      name: "snitch",
-      subtitle: "PRINT & SIGN",
+      name: "Snitch Print & Sign",
       logo: "/snitch.png",
     },
-    {
-      name: "NILE TECHNOLOGY",
-      subtitle: "",
-      logo: "/wizard pro.png",
-    },
+    // {
+    //   name: "Nile Technology",
+    //   logo: "/nile.png",
+    // },
   ]
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Sister <span className="text-accent">Concerns</span></h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            We are proud to be associated with these trusted brands
-          </p>
-        </div>
+    <section className="py-20 bg-white">
+      <div className="container max-w-7xl mx-auto px-4">
+        <div className="bg-[#06177f] rounded-2xl p-8 lg:p-12">
+          {/* Title */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Our Sister Concerns
+            </h2>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {sisterConcerns.map((concern, index) => (
-            <div
-              key={index}
-              className=" transition-shadow duration-300 flex flex-col items-center justify-center text-center "
-            >
-              <img
-                src={concern.logo || "/placeholder.svg"}
-                alt={concern.name}
-                className="h-10 w-auto object-contain"
-              />
-            </div>
-          ))}
+          {/* Logos in white boxes */}
+          <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-6">
+            {sisterConcerns.map((concern, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-4 lg:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center"
+              >
+                <img
+                  src={concern.logo || "/placeholder.svg"}
+                  alt={concern.name}
+                  className="h-12 lg:h-16 w-auto object-contain max-w-[180px]"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

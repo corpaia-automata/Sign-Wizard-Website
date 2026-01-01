@@ -25,28 +25,28 @@ export function Navbar() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between text-sm">
-            <div className="flex items-center gap-6">
+      <div className="bg-primary text-primary-foreground ">
+        {/* <div className="container mx-auto px-4"> */}
+          {/* <div className="flex items-center justify-between text-sm"> */}
+            {/* <div className="flex items-center gap-6"> */}
               {/* <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="h-4 w-4" />
                 <span>+91 98765 43210</span>
               </a> */}
-              <span className="hidden md:block">Serving Across India</span>
+              {/* <span className="hidden md:block">Serving Across India</span>
             </div>
             <div className="flex items-center gap-4">
               <p className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
                 <span>Call Us: 9946 20 70 70, 9072 836 836</span>
               </p>
-            </div>
-          </div>
-        </div>
+            </div> */}
+          {/* </div> */}
+        {/* </div> */}
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
+      <nav className="bg-background py-2 border-b border-border sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
