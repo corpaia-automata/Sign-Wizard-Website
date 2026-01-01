@@ -2,6 +2,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Font loading optimization - prevent layout shift */
+@font-face {
+  font-family: 'Funnel Sans';
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -124,7 +130,11 @@
     @apply bg-background text-foreground;
   }
   h1, h2, h3, h4 {
-    font-family: 'Funnel Sans', sans-serif;
+    font-family: 'Funnel Sans', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'kern' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

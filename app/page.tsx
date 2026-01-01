@@ -59,7 +59,7 @@ const services = [
     description: "Direct-to-surface printing on rigid and flexible materials with instant drying",
     icon: Settings,
     href: "/services/uv-flatbed",
-    image: "/uv flatbed/01.png",
+    image: "/uv flatbed/faltbed 03.jpg",
   },
   {
     title: "Creative Designing",

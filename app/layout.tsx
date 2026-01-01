@@ -6,7 +6,13 @@ import { Toaster } from "@/components/ui/toaster"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
+
+// Funnel Sans is loaded via CSS @import, but we'll reference it via CSS variable for consistency
 
 export const metadata: Metadata = {
   title: "Sign Wizard - Professional Signage, Printing & Branding Solutions",
