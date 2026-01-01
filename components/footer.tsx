@@ -15,7 +15,7 @@ export function Footer() {
                 alt="Sign Wizard Logo"
                 width={150}
                 height={60}
-                className="h-auto w-auto object-contain"
+                className="h-auto w-auto object-cover"
               />
             </div>
             {/* <p className="text-sm text-[#06177f] leading-relaxed">
