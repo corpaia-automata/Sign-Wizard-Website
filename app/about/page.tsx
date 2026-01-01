@@ -6,6 +6,7 @@ import { Target, Eye, Award, ArrowRight, PenTool, Factory, ShieldCheck, Wrench }
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { SisterConcerns } from "@/components/sister-concerns"
+import { OurStory } from "@/components/our-story"
 
 export default function AboutPage() {
   return (
@@ -23,7 +24,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-bold text-primary text-center mb-4">
@@ -58,7 +59,9 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <OurStory/>
 
       {/* Founder Section */}
       {/* <section className="py-20 bg-secondary">

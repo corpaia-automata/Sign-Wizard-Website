@@ -251,46 +251,48 @@ export default function HomePage() {
       <FAQ />
 
 
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
             {/* Get In Touch With Us - Left Side */}
             <div className="flex flex-col justify-start items-start">
               {/* Google Rating Badge */}
-              <div className="bg-white rounded-lg shadow-md px-4 py-2 flex items-center gap-2 mb-6 self-start">
-                <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
+              <div className="bg-white rounded-lg shadow-md px-3 sm:px-4 py-2 flex items-center gap-2 mb-4 sm:mb-6 self-start">
+                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-blue-600 rounded flex items-center justify-center">
                   <span className="text-white text-xs font-bold">G</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span className="font-semibold text-primary">4.5/5</span>
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 fill-yellow-400 text-yellow-400" />
+                  <span className="font-semibold text-primary text-sm sm:text-base">4.5/5</span>
                 </div>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-[#06177f] mb-6">Get In <br /> <span className="text-accent ">Touch With Us</span> </h2>
-              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#06177f] mb-4 sm:mb-6">
+                Get In <br className="hidden sm:block" /> <span className="text-accent">Touch With Us</span>
+              </h2>
+              <p className="text-muted-foreground text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 We would love to hear from you. Whether you have queries, need assistance, or want to explore our products, we are here to help you.
               </p>
             </div>
 
             {/* Enquire Now Form - Right Side */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-4xl md:text-5xl font-bold text-[#06177f] mb-6">Enquire Now</h2>
-              <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#06177f] mb-4 sm:mb-6">Enquire Now</h2>
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-primary font-semibold">Full Name *</Label>
+                  <Label htmlFor="name" className="text-primary font-semibold text-sm sm:text-base">Full Name *</Label>
                   <Input
                     id="name"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Enter your full name"
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-primary font-semibold">Email Address *</Label>
+                  <Label htmlFor="email" className="text-primary font-semibold text-sm sm:text-base">Email Address *</Label>
                   <Input
                     id="email"
                     type="email"
@@ -298,52 +300,53 @@ export default function HomePage() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="Enter your email address"
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="company" className="text-primary font-semibold">Company name *</Label>
+                  <Label htmlFor="company" className="text-primary font-semibold text-sm sm:text-base">Company name *</Label>
                   <Input
                     id="company"
                     required
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     placeholder="Enter your company name"
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-primary font-semibold">Phone Number *</Label>
-                  <div className="flex gap-2">                    <Input
-                    id="phone"
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder={formData.countryCode}
-                    className="flex-1 h-12"
-                  />
+                  <Label htmlFor="phone" className="text-primary font-semibold text-sm sm:text-base">Phone Number *</Label>
+                  <div className="flex gap-2">
+                    <Input
+                      id="phone"
+                      type="tel"
+                      required
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder={formData.countryCode}
+                      className="flex-1 h-10 sm:h-12 text-sm sm:text-base"
+                    />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-primary font-semibold">Send us your query</Label>
+                  <Label htmlFor="message" className="text-primary font-semibold text-sm sm:text-base">Send us your query</Label>
                   <Textarea
                     id="message"
                     required
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Enter your message..."
-                    rows={5}
-                    className="resize-none"
+                    rows={4}
+                    className="resize-none text-sm sm:text-base"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-12 text-lg font-semibold"
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-10 sm:h-12 text-base sm:text-lg font-semibold"
                 >
                   Get a Quote Now
                 </Button>
@@ -353,33 +356,35 @@ export default function HomePage() {
         </div>
       </section>
       {/* Final CTA */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-accent">Ready to Transform Your Brand?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-balance text-[#06177f]">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance text-accent px-4">
+            Ready to Transform Your Brand?
+          </h2>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto text-balance text-[#06177f] px-4">
             Get a free consultation and quote for your signage project today
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Button
               onClick={() => setQuoteModalOpen(true)}
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-lg px-8 py-6 rounded-xl"
+              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-xl w-full sm:w-auto"
             >
               Get Free Quote
-              <div className="ml-2 w-8 h-8 bg-[#06177f] rounded-full flex items-center justify-center">
-                <ArrowRight className="h-4 w-4 text-white" />
+              <div className="ml-2 w-7 h-7 sm:w-8 sm:h-8 bg-[#06177f] rounded-full flex items-center justify-center">
+                <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
               </div>
             </Button>
             <Button
               onClick={() => setQuoteModalOpen(true)}
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-lg px-8 py-6 rounded-xl"
+              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-xl w-full sm:w-auto"
             >
               Talk to Our Expert
-              <div className="ml-2 w-8 h-8 bg-[#06177f] rounded-full flex items-center justify-center">
-                <ArrowRight className="h-4 w-4 text-white" />
+              <div className="ml-2 w-7 h-7 sm:w-8 sm:h-8 bg-[#06177f] rounded-full flex items-center justify-center">
+                <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
               </div>
             </Button>
           </div>

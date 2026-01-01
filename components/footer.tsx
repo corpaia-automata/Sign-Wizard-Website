@@ -5,8 +5,8 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, MessageSquare } fro
 export function Footer() {
   return (
     <footer className="bg-white text-white">
-      <div className="container max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* About */}
           <div>
             <div className="mb-4 ">
@@ -142,20 +142,20 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#06177f] mt-8 pt-8 flex justify-between items-center text-sm text-white/90">
-        <div className="flex gap-4">
-          <p className="text-[#06177f]">&copy; {new Date().getFullYear()} Sign Wizard. All rights reserved.</p>
-          <p className="text-[#06177f]">Privacy Policy | Terms of Service</p>
-        </div>
+        <div className="border-t border-[#06177f] mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 text-sm text-white/90">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center text-center sm:text-left">
+            <p className="text-[#06177f] text-xs sm:text-sm">&copy; {new Date().getFullYear()} Sign Wizard. All rights reserved.</p>
+            <p className="text-[#06177f] text-xs sm:text-sm">Privacy Policy | Terms of Service</p>
+          </div>
           <div className="flex gap-4">
-            <a href="https://www.facebook.com/www.signwizard.in/" className="text-[#06177f]  transition-colors">
-              <Facebook className="h-6 w-6" />
+            <a href="https://www.facebook.com/www.signwizard.in/" className="text-[#06177f] transition-colors">
+              <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
             </a>
             <a href="https://www.instagram.com/signwizard.in/?hl=en" className="text-[#06177f] hover:text-[#06177f] transition-colors">
-              <Instagram className="h-6 w-6" />
+              <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
             </a>
-            <a href="https://www.linkedin.com" className="text-[#06177f]  transition-colors">
-              <Linkedin className="h-6 w-6" />
+            <a href="https://www.linkedin.com" className="text-[#06177f] transition-colors">
+              <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
             </a>
           </div>
         </div>

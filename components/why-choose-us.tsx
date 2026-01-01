@@ -29,39 +29,31 @@ export function WhyChooseUs() {
   ]
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container max-w-7xl mx-auto px-4">
-        <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#06177f] mb-6">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#06177f] mb-4 sm:mb-6">
             Why Choose Us?
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {features.map((feature, idx) => (
             <div key={idx} className="relative">
               {/* Title with icon */}
-              <div className="flex items-center justify-between gap-4 mb-3">
-              <div className="relative w-12 h-12 bg-[#06177f] rounded-full flex items-center justify-center flex-shrink-0 z-10">
-                  <Check className="h-6 w-6 text-white" />
+              <div className="flex items-start gap-3 sm:gap-4 mb-3">
+                <div className="relative w-10 h-10 sm:w-12 sm:h-12 bg-[#06177f] rounded-full flex items-center justify-center flex-shrink-0 z-10 mt-1">
+                  <Check className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-accent flex-1">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-accent flex-1 leading-tight">
                   {feature.title}
                 </h3>
-                
-                {/* Checkmark icon circle - positioned to the right of title, above the curve */}
-                {/* <div className="relative w-12 h-12 bg-[#06177f] rounded-full flex items-center justify-center flex-shrink-0 z-10">
-                  <Check className="h-6 w-6 text-white" />
-                </div> */}
               </div>
-              
-              {/* Description with curved underline */}
+
+              {/* Description */}
               <div className="relative">
-                <p className="text-base md:text-lg text-[#06177f] leading-relaxed pr-16">
+                <p className="text-sm sm:text-base md:text-lg text-[#06177f] leading-relaxed pl-0 sm:pl-14">
                   {feature.description}
                 </p>
-                
-                {/* Curved line - starts from bottom-right of icon, curves down and extends as underline */}
-                
               </div>
             </div>
           ))}
