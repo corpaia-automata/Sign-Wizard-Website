@@ -9,15 +9,17 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* About */}
           <div>
-            <div className="mb-4 ">
+            <div className="w-[150px]">
               <Image
                 src="/sign_wizard.png"
                 alt="Sign Wizard Logo"
                 width={150}
                 height={60}
-                className="h-auto w-auto object-cover"
+                className="w-full h-auto object-contain"
+                priority
               />
             </div>
+
             {/* <p className="text-sm text-[#06177f] leading-relaxed">
               Your trusted partner in professional signage, printing, and branding solutions. Transforming brands with
               innovative designs and quality craftsmanship since 2010.
