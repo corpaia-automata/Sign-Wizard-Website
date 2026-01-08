@@ -11,7 +11,7 @@ export function Hero({ onQuoteClick }: HeroProps) {
   return (
     <section className="relative w-full max-w-full overflow-x-hidden">
       {/* Top Section with Image Background */}
-      <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[550px] flex items-center w-full max-w-full overflow-hidden">
+      <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[450px] lg:min-h-[500px] flex items-center w-full max-w-full overflow-hidden">
         <img
           src="/home.jpg"
           alt="Sign Wizard"
