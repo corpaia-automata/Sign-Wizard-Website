@@ -81,7 +81,7 @@ export function Services({ services }: ServicesProps) {
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
                 </div>
-                <div className="lg:w-[40%] p-2 sm:p-6 flex items-center justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+                <div className="lg:w-[40%] sm:p-6 flex items-center justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-[450px]">
                   <img
                     src={featuredServices[1].image || "/placeholder.svg"}
                     alt={featuredServices[1].title}
