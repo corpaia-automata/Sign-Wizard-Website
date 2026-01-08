@@ -3,16 +3,16 @@
 import { useEffect, useState } from "react"
 
 const works = [
-  "/works/01.jpg",
-  "/works/beyond.jpg",
-  "/works/chb-01.jpg",
-  "/works/heal.jpg",
-  "/works/ntk.jpg",
-  "/works/ntk2.jpg",
+  "/works/01.webp",
+  "/works/beyond.webp",
+  "/works/chb-01.webp",
+  "/works/heal.webp",
+  "/works/ntk.webp",
+  "/works/ntk2.webp",
   "/works/nuvision.jpg",
-  "/works/otto.jpg",
-  "/works/pomees-01.jpg",
-  "/works/wingspan.jpg",
+  "/works/otto.webp",
+  "/works/pomees-01.webp",
+  "/works/wingspan.webp",
 ]
 
 export function Works() {
