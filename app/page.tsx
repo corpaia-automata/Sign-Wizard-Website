@@ -15,6 +15,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { QuoteModal } from "@/components/quote-modal"
 import { Hero } from "@/components/hero"
+import { Works } from "@/components/works"
 import { Clients } from "@/components/clients"
 import { Industries } from "@/components/industries"
 import { WhyChooseUs } from "@/components/why-choose-us"
@@ -161,6 +162,7 @@ export default function HomePage() {
 
       <Hero onQuoteClick={() => setQuoteModalOpen(true)} />
 
+      <Works />
 
       {/* Our Signage Services */}
       {/* <ServiceSection
