@@ -249,15 +249,15 @@ export default function HomePage() {
         </div>
       </section> */}
 
-      <FAQ />
+      {/* <FAQ /> */}
 
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
+      {/* <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
-            {/* Get In Touch With Us - Left Side */}
+
             <div className="flex flex-col justify-start items-start">
-              {/* Google Rating Badge */}
+ 
               <div className="bg-white rounded-lg shadow-md px-3 sm:px-4 py-2 flex items-center gap-2 mb-4 sm:mb-6 self-start">
                 <div className="w-5 h-5 sm:w-6 sm:h-6 bg-blue-600 rounded flex items-center justify-center">
                   <span className="text-white text-xs font-bold">G</span>
@@ -276,7 +276,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Enquire Now Form - Right Side */}
             <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#06177f] mb-4 sm:mb-6">Enquire Now</h2>
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
@@ -355,7 +354,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Final CTA */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 text-center">

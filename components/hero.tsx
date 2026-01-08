@@ -11,14 +11,14 @@ export function Hero({ onQuoteClick }: HeroProps) {
   return (
     <section className="relative w-full max-w-full overflow-x-hidden">
       {/* Top Section with Image Background */}
-      <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex items-center w-full max-w-full overflow-hidden">
+      <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[550px] flex items-center w-full max-w-full overflow-hidden">
         <img
           src="/home.jpg"
           alt="Sign Wizard"
           className="absolute inset-0 w-full h-full object-cover max-w-full"
         />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 z-10 bg-black/40" />
+        <div className="absolute inset-0 z-10 " />
         <div className="container mx-auto px-4 sm:px-6 relative z-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             {/* Left Side - Text */}
@@ -38,7 +38,7 @@ export function Hero({ onQuoteClick }: HeroProps) {
       </div>
 
       {/* Bottom White Section - Statistics */}
-      <div className="bg-white py-6">
+      <div className="bg-white py-8">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto">
             {/* Project Completed */}
