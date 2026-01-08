@@ -39,14 +39,14 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[300px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[300px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img
           src="/modern-office-exterior.png"
           alt="Contact Us"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-2">Contact Us</h1>
           <p className="text-xl md:text-2xl text-white/90">SIGN WIZARD® ADVERTISING HUB</p>
         </div>
@@ -173,7 +173,7 @@ export default function ContactPage() {
 
       {/* Let's Connect Section */}
       <section className="py-20 bg-primary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">Let's Connect!</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Call us Card */}
@@ -230,7 +230,7 @@ export default function ContactPage() {
 
       {/* Map */}
       {/* <section className="pb-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="rounded-lg overflow-hidden shadow-lg h-[400px] bg-muted flex items-center justify-center">
             <p className="text-muted-foreground">Google Maps Integration Here</p>
           </div>

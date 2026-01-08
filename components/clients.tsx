@@ -174,7 +174,7 @@ export function Clients() {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
-      <div className="container mx-auto px-4 sm:px-6">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         {/* Title */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#06177f] mb-6 sm:mb-12 px-4">

@@ -28,7 +28,7 @@ export function Works() {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Slideshow Container */}
         <div className="relative w-full max-w-6xl mx-auto">
@@ -36,9 +36,8 @@ export function Works() {
             {works.map((work, index) => (
               <div
                 key={work}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                  index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+                  }`}
               >
                 <img
                   src={work}
@@ -48,7 +47,7 @@ export function Works() {
                 />
               </div>
             ))}
-            
+
             {/* Overlay gradient for better text readability if needed */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10 pointer-events-none"></div>
           </div>
@@ -59,11 +58,10 @@ export function Works() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex
-                    ? "w-8 bg-accent"
-                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
+                className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                  ? "w-8 bg-accent"
+                  : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

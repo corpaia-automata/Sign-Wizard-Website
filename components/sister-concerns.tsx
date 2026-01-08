@@ -24,7 +24,7 @@ export function SisterConcerns() {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container max-w-7xl mx-auto px-4">
+      <div className="w-full max-w-7xl mx-auto px-4">
         <div className="bg-[#06177f] rounded-2xl p-8 lg:p-12">
           {/* Title */}
           <div className="text-center mb-8">

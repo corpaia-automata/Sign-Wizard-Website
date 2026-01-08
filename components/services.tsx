@@ -27,7 +27,7 @@ export function Services({ services }: ServicesProps) {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#06177f] mb-3 sm:mb-4">Our Services</h2>
         </div>

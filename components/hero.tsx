@@ -19,7 +19,7 @@ export function Hero({ onQuoteClick }: HeroProps) {
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 z-10 " />
-        <div className="container mx-auto px-4 sm:px-6 relative z-20">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             {/* Left Side - Text */}
             <div className="text-white py-8 sm:py-12">
@@ -39,7 +39,7 @@ export function Hero({ onQuoteClick }: HeroProps) {
 
       {/* Bottom White Section - Statistics */}
       <div className="bg-white py-8">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto">
             {/* Project Completed */}
             <div className="flex flex-col sm:flex-row rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">

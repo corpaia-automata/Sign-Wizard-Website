@@ -17,14 +17,14 @@ export default function CreativeDesigningPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[400px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[400px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img
           src="/placeholder.svg?height=400&width=1920"
           alt="Creative Designing"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Creative Designing</h1>
           <p className="text-xl max-w-2xl mx-auto">Professional brand identity and visual communication design</p>
         </div>
@@ -32,7 +32,7 @@ export default function CreativeDesigningPage() {
 
       {/* Service Description - Text Left, Image Right */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">What is Creative Designing?</h2>
@@ -59,7 +59,7 @@ export default function CreativeDesigningPage() {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
@@ -111,7 +111,7 @@ export default function CreativeDesigningPage() {
 
       {/* Design Process - Image Left, Text Right */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
@@ -160,7 +160,7 @@ export default function CreativeDesigningPage() {
 
       {/* Project Images */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Design Portfolio</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -181,7 +181,7 @@ export default function CreativeDesigningPage() {
         {/* Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-r from-pink-50 via-pink-50/50 to-blue-50 -z-10" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -337,7 +337,7 @@ export default function CreativeDesigningPage() {
 
       {/* CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="w-full max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Bring Your Brand to Life?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get a free consultation and quote for your creative design project

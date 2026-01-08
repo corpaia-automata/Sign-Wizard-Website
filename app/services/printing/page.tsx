@@ -16,14 +16,14 @@ export default function PrintingPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[400px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[400px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img
           src="/placeholder.svg?height=400&width=1920"
           alt="Flex & UV Printing"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Flex & UV Printing</h1>
           <p className="text-xl max-w-2xl mx-auto">High-quality large format printing on various materials</p>
         </div>
@@ -31,7 +31,7 @@ export default function PrintingPage() {
 
       {/* Service Description - Text Left, Image Right */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">What is Flex & UV Printing?</h2>
@@ -60,7 +60,7 @@ export default function PrintingPage() {
 
       {/* Applications */}
       <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Perfect For</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
@@ -85,7 +85,7 @@ export default function PrintingPage() {
 
       {/* Printing Types - Image Left, Text Right */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
@@ -133,7 +133,7 @@ export default function PrintingPage() {
 
       {/* Materials & Substrates - Text Left, Image Right */}
       <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-primary mb-8">Printing Materials & Substrates</h2>
@@ -181,7 +181,7 @@ export default function PrintingPage() {
 
       {/* Project Images */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Printing Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -199,7 +199,7 @@ export default function PrintingPage() {
 
       {/* FAQ */}
       <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4 max-w-3xl">
+        <div className="w-full max-w-7xl mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">Frequently Asked Questions</h2>
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1">
@@ -244,7 +244,7 @@ export default function PrintingPage() {
 
       {/* CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="w-full max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Bring Your Vision to Life?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get a free consultation and quote for your flex & UV printing project

@@ -17,14 +17,14 @@ export default function LaserCuttingPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[400px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[400px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img
           src="/Jali/jali cutting 2.jpg"
           alt="Jali & Laser Cutting"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Jali & Laser Cutting</h1>
           <p className="text-xl max-w-2xl mx-auto">Precision cutting and intricate patterns for architectural elegance</p>
         </div>
@@ -32,7 +32,7 @@ export default function LaserCuttingPage() {
 
       {/* Service Description - Text Left, Image Right */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">What is Jali & Laser Cutting?</h2>
@@ -61,7 +61,7 @@ export default function LaserCuttingPage() {
 
 
       {/* <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
@@ -109,7 +109,7 @@ export default function LaserCuttingPage() {
 
       {/* Materials & Patterns - Text Left, Image Right */}
       {/* <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-primary mb-8">Materials & Pattern Options</h2>
@@ -157,7 +157,7 @@ export default function LaserCuttingPage() {
 
       {/* Project Images */}
       <section className="py-20">
-        <div className="container items-center justify-center mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4 flex items-center justify-center">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Outdoor Advertising Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
             {[
@@ -182,7 +182,7 @@ export default function LaserCuttingPage() {
         {/* Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-r from-pink-50 via-pink-50/50 to-blue-50 -z-10" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -340,7 +340,7 @@ export default function LaserCuttingPage() {
 
       {/* CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="w-full max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Create Intricate Designs?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get a free consultation and quote for your jali & laser cutting project

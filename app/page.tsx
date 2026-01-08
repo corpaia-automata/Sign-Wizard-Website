@@ -194,7 +194,7 @@ export default function HomePage() {
 
       {/* Featured Projects */}
       {/* <section className="py-20 ">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">Featured Projects</h2>
             <p className="text-xl text-muted-foreground">See our work in action</p>
@@ -233,7 +233,7 @@ export default function HomePage() {
 
       {/* Testimonials */}
       {/* <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">What Our Clients Say</h2>
           </div>
@@ -359,7 +359,7 @@ export default function HomePage() {
       </section> */}
       {/* Final CTA */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 text-center">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance text-accent px-4">
             Ready to Transform Your Brand?
           </h2>

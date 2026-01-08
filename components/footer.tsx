@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, MessageSquare } fro
 export function Footer() {
   return (
     <footer className="bg-white text-white">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* About */}
           <div>

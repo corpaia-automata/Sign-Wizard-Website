@@ -29,14 +29,14 @@ export default function ClientsPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[300px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[300px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img
           src="/placeholder.svg?height=300&width=1920"
           alt="Our Clients"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Our Clients</h1>
           <p className="text-xl">Trusted by leading brands across industries</p>
         </div>
@@ -44,7 +44,7 @@ export default function ClientsPage() {
 
       {/* Trust Statement */}
       <section className="py-20">
-        <div className="container mx-auto px-4 text-center">
+        <div className="w-full max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 max-w-7xl mx-auto text-balance">
             Proud to Partner with Businesses That Value Quality and Innovation
           </h2>
@@ -57,7 +57,7 @@ export default function ClientsPage() {
 
       {/* Client Logos */}
       <section className="py-12 bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {clients.map((client, idx) => (
               <Card key={idx} className="hover:shadow-lg transition-shadow">
@@ -76,7 +76,7 @@ export default function ClientsPage() {
 
       {/* Industries Served */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">

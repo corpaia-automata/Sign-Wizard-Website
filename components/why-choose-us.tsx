@@ -30,7 +30,7 @@ export function WhyChooseUs() {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#06177f] mb-4 sm:mb-6">
             Why Choose Us?

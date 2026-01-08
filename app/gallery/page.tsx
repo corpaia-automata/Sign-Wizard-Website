@@ -31,14 +31,14 @@ export default function GalleryPage() {
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="relative h-[300px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[300px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img
           src="/placeholder.svg?height=300&width=1920"
           alt="Gallery"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Our Projects</h1>
           <p className="text-xl">Explore our portfolio of successful signage solutions</p>
         </div>
@@ -46,7 +46,7 @@ export default function GalleryPage() {
 
       {/* Gallery */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (

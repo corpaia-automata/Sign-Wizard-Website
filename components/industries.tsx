@@ -83,7 +83,7 @@ export function Industries() {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),transparent_50%)]" />
 
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div>

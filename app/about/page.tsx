@@ -14,10 +14,10 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[400px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[400px] flex items-center justify-center text-center text-white w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10" />
         <img src="/professional-team-signage-manufacturing.jpg" alt="About Us" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="relative z-20 container mx-auto px-4">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">About Sign Wizard</h1>
           <p className="text-xl max-w-2xl mx-auto">Crafting excellence in signage and branding for over 15 years</p>
         </div>
@@ -25,7 +25,7 @@ export default function AboutPage() {
 
       {/* Our Story */}
       {/* <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-bold text-primary text-center mb-4">
               Our <span className="text-accent">Story</span>
@@ -65,7 +65,7 @@ export default function AboutPage() {
 
       {/* Founder Section */}
       {/* <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
 
       {/* Vision, Mission & Values */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-bold text-primary mb-12 text-center">
               Our <span className="text-accent">Vision</span>, Mission & Values
@@ -135,13 +135,13 @@ export default function AboutPage() {
 
       {/* Our Process */}
       <section className="py-20 w-full bg-secondary/30">
-        <div className="container mx-auto px-4 mb-12">
+        <div className="w-full max-w-7xl mx-auto px-4 mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 text-center">We Have Best Team and <span className="text-accent">Best Process</span></h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto">
             Our streamlined process ensures your signage project is completed with precision, quality, and efficiency from start to finish.
           </p>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-0 items-stretch max-w-8xl mx-auto">
             {[
               {

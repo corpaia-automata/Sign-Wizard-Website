@@ -22,7 +22,7 @@ export default function ServiceSection({ services, onQuoteClick, title, descript
     <section className="relative bg-background max-w-[90rem] mx-auto">
       {/* Heading Section */}
       {(title || description) && (
-        <div className="container mx-auto px-4 py-8">
+        <div className="w-full max-w-7xl mx-auto px-4 py-8">
           {title && (
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-3">
               {title}
@@ -39,7 +39,7 @@ export default function ServiceSection({ services, onQuoteClick, title, descript
       {/* Mobile: Normal Scroll Layout */}
       <div className="lg:hidden space-y-12 mx-auto py-8">
         {services.map((service, index) => (
-          <div key={service.title} className="container mx-auto px-4">
+          <div key={service.title} className="w-full max-w-7xl mx-auto px-4">
             <div className="space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">

@@ -41,7 +41,7 @@ export function FAQ() {
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-pink-50 via-pink-50/50 to-blue-50 -z-10" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">

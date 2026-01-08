@@ -4,7 +4,7 @@ export function OurStory() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
       {/* Top Section - Text and Favicon */}
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 items-center">
           {/* Left Side - Text Content (60%) */}
           <div className="lg:w-[60%] w-full">
