@@ -14,9 +14,11 @@ import { useToast } from "@/hooks/use-toast"
 interface QuoteModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
+  title?: string
+  description?: string
 }
 
-export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
+export function QuoteModal({ open, onOpenChange, title = "Get a Free Quote", description = "Fill in your details and we'll get back to you with a customized quote within 24 hours." }: QuoteModalProps) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -53,9 +55,9 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-2xl">
         <DialogHeader className="text-left">
-          <DialogTitle className="text-2xl text-[#06177f] md:text-4xl text-left font-bold text-primary">Get a Free Quote</DialogTitle>
+          <DialogTitle className="text-2xl text-[#06177f] md:text-4xl text-left font-bold text-primary">{title}</DialogTitle>
           <DialogDescription>
-            Fill in your details and we'll get back to you with a customized quote within 24 hours.
+            {description}
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">

@@ -9,13 +9,13 @@ interface HeroProps {
 
 export function Hero({ onQuoteClick }: HeroProps) {
   return (
-    <section className="relative">
+    <section className="relative w-full max-w-full overflow-x-hidden">
       {/* Top Section with Image Background */}
-      <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex items-center">
+      <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex items-center w-full max-w-full overflow-hidden">
         <img
           src="/home.jpg"
           alt="Sign Wizard"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover max-w-full"
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 z-10 bg-black/40" />

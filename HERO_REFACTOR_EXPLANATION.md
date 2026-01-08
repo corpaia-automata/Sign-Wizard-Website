@@ -275,3 +275,6 @@ min-h-[5rem] sm:min-h-0  // Consistent across all cards
 - **Use rem/em** for spacing, not px
 - **Grid over absolute** for stable layouts
 
+
+
+

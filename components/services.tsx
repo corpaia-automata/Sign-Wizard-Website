@@ -36,7 +36,7 @@ export function Services({ services }: ServicesProps) {
         <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
           {/* LED 3D Letter Signage - Red Background */}
           {featuredServices[0] && (
-            <Link href={featuredServices[0].href} className="block group">
+            <Link href="/services/led-3d-letters" className="block group">
               <div className="flex flex-col lg:flex-row gap-0 bg-accent rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="lg:w-[60%] p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-white">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4">
@@ -68,7 +68,7 @@ export function Services({ services }: ServicesProps) {
             <Link href={featuredServices[1].href} className="block group">
               <div className="flex flex-col lg:flex-row gap-0 bg-white border-2 border-[#06177f] rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="lg:w-[60%] p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-[#06177f]">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-[#06177f]">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 text-[#06177f]">
                     {featuredServices[1].title}
                   </h3>
                   {featuredServices[1].description && (
@@ -81,11 +81,11 @@ export function Services({ services }: ServicesProps) {
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
                 </div>
-                <div className="lg:w-[40%] p-4 sm:p-6 flex items-center justify-center">
+                <div className="lg:w-[40%] p-2 sm:p-6 flex items-center justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
                   <img
                     src={featuredServices[1].image || "/placeholder.svg"}
                     alt={featuredServices[1].title}
-                    className="w-full h-auto object-contain rounded-xl sm:rounded-2xl"
+                    className="w-full h-full  object-contain rounded-2xl sm:rounded-2xl"
                   />
                 </div>
               </div>

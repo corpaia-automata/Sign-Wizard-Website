@@ -138,6 +138,7 @@ const testimonials = [
 
 export default function HomePage() {
   const [quoteModalOpen, setQuoteModalOpen] = useState(false)
+  const [expertModalOpen, setExpertModalOpen] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -155,7 +156,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden">
       <Navbar />
 
       <Hero onQuoteClick={() => setQuoteModalOpen(true)} />
@@ -369,7 +370,7 @@ export default function HomePage() {
               onClick={() => setQuoteModalOpen(true)}
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-xl w-full sm:w-auto"
+              className="bg-white text-[#06177f] border-2 border-[#06177f] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-xl w-full sm:w-auto"
             >
               Get Free Quote
               <div className="ml-2 w-7 h-7 sm:w-8 sm:h-8 bg-[#06177f] rounded-full flex items-center justify-center">
@@ -380,7 +381,7 @@ export default function HomePage() {
               onClick={() => setQuoteModalOpen(true)}
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-50 text-[#06177f] border-2 border-[#06177f] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-xl w-full sm:w-auto"
+              className="  text-[#06177f] border-2 border-[#06177f] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-xl w-full sm:w-auto"
             >
               Talk to Our Expert
               <div className="ml-2 w-7 h-7 sm:w-8 sm:h-8 bg-[#06177f] rounded-full flex items-center justify-center">

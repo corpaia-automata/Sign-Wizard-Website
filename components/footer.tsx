@@ -9,12 +9,12 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* About */}
           <div>
-            <div className="w-[150px]">
+            <div className="w-[200px] sm:w-[250px]">
               <Image
                 src="/sign_wizard.png"
                 alt="Sign Wizard Logo"
-                width={150}
-                height={60}
+                width={250}
+                height={100}
                 className="w-full h-auto object-contain"
                 priority
               />
