@@ -48,7 +48,6 @@ const clients = [
   "/clients/chola.png",
   "/clients/eranad.png",
   "/clients/images.png",
-  "/clients/kasavu.png",
   "/clients/mathribhumi.png",
   "/clients/ahalia.webp",
   "/clients/mea.png",

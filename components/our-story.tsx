@@ -34,7 +34,7 @@ export function OurStory() {
           <div className="lg:w-[40%] w-full flex items-center justify-center">
             <div className="w-full max-w-xs sm:max-w-md">
               <img
-                src="/logo.png"
+                src="/story.png"
                 alt="Sign Wizard Logo"
                 className="w-full h-auto object-contain"
               />
